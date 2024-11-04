@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, Image} from "react-native";
 import { Colors } from "@/constants/Colors";
 import products from "@/assets/data/products";
 
-const product = products[3];
+const product = products[0];
 
 export default function App(){
   return(
@@ -16,7 +16,9 @@ export default function App(){
 
 const styles = StyleSheet.create({
   container:{
-    marginTop:60,
+    backgroundColor:'white',
+    padding:10,
+    borderRadius:15,
   },
   title:{
     fontSize:18,
