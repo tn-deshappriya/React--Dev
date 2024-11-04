@@ -7,6 +7,7 @@ const product = products[3];
 export default function App(){
   return(
     <View style = {styles.container}>
+      <Image source={{uri:product.image}} style={styles.Image}/>
       <Text style = {styles.title}>{product.name}</Text>
       <Text style ={styles.price}>${product.price}</Text>
     </View>
@@ -25,5 +26,9 @@ const styles = StyleSheet.create({
   price:{
     color: Colors.light.tint,
     fontWeight:'bold',
-  }
+  },
+  Image:{
+    width:'100%',
+    aspectRatio:1,
+  },
 })
